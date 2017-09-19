@@ -1,7 +1,8 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
 #switch on systemd init system in container
 ENV INITSYSTEM on
-
+#install ntp
+RUN apt-get install -y ntp
 #set up working directory
 WORKDIR /usr/src/app
 
