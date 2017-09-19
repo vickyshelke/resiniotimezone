@@ -1,0 +1,8 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
+
+WORKDIR /usr/src/app
+
+COPY . ./
+
+CMD ["bash", "Begin.sh"]
+
