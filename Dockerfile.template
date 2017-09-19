@@ -1,8 +1,11 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
+#switch on systemd init system in container
+ENV INITSYSTEM on
 
+#set up working directory
 WORKDIR /usr/src/app
 
-COPY . ./
+COPY ../
 
 CMD ["bash", "Begin.sh"]
 
