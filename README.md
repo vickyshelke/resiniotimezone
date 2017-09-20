@@ -11,7 +11,7 @@ directory ([see info](https://wiki.debian.org/TimeZoneChanges)), or from
 value, either in the Dockerfile (hardcoded) by `ENV TIMEZONE <value>` or a new
 variable called `TIMEZONE` in the [dashboard](https://docs.resin.io/management/env-vars/).
 
-For example set `TIMEZONE` to `Turky` to follow the local time, or
+For example set `TIMEZONE` to `Turkey` to follow the local time, or
 `Asia/Tokyo` if you are in Tokyo, etc.
 
 
